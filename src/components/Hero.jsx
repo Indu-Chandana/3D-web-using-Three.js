@@ -40,6 +40,7 @@ const Hero = () => {
             <motion.div
               animate={{
                 y: [0, 24, 0], // we animate just Y property
+                // x: [0, 24, 0],
               }}
               transition={{
                 duration: 1.5,
