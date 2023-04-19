@@ -198,30 +198,31 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Web3.0 Blockchain-App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Blockchain Cryptocurrency app. Design, connected to the blockchain, metamask pairing, interaction with smart contracts, sending Ethereum through the blockchain network, writing solidity code.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Solidity",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "blockchain",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://krypt-indu.netlify.app/",
+    github_link: "https://github.com/Indu-Chandana/Web3.0-Blockchain-Application"
   },
   {
-    name: "Job IT",
+    name: "ShapeUp",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "With the functionality to choose exercise categories and specific muscle groups, browse more than one thousand exercises with practical examples, pull related videos from youtube, and much more...",
     tags: [
       {
         name: "react",
@@ -232,33 +233,35 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "muiV5",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://fit-indu.netlify.app/",
+    github_link: "https://github.com/Indu-Chandana/Fitness-Exercises-App-With-APIs"
   },
   {
-    name: "Trip Guide",
+    name: "METAVERSE",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Transform a Figma design into a fully functioning website using Next13, Framer Motion, and Tailwind CSS. React project Architecture and Clean code best practices.",
     tags: [
       {
-        name: "nextjs",
+        name: "nextjs_13",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "TailwindCSS",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "framer-motion",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://metaversus-ui.vercel.app/",
+    github_link: "https://github.com/Indu-Chandana/Metaversus-Ui"
   },
 ];
 

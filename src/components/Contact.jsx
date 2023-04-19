@@ -10,6 +10,7 @@ import { slideIn } from "../utils/motion";
 // public key: Q6fYCk760X0rk-r7u
 // tempID: template_ethfdoe
 // serviceID: service_bwumfja
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -19,8 +20,46 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_bwumfja",
+        "template_ethfdoe",
+        {
+          from_name: form.name,
+          to_name: "Indu Chandana",
+          from_email: form.email,
+          to_email: "indu.99.ic@gmail.com",
+          message: form.message,
+        },
+        "Q6fYCk760X0rk-r7u"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you, I will get back to you as soon as possible");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+
+          console.warn(error);
+          alert("Something went wrong.");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
