@@ -4,7 +4,7 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github, web } from "../assets";
+import { github, web, link } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,7 +15,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  sourse_code_link,
+  source_code_link,
   github_link,
 }) => {
   return (
@@ -43,11 +43,11 @@ const ProjectCard = ({
               <img src={github} alt="github" className="object-contain" />
             </div>
             <div
-              onClick={() => window.open(sourse_code_link, "_blank")}
-              className="black-gradient w-10 h-10 ml-1 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="bg-yellow-500 w-10 h-10 ml-1 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={web}
+                src={link}
                 alt="github"
                 className="h-1/2 w-1/2 object-contain"
               />
@@ -100,4 +100,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

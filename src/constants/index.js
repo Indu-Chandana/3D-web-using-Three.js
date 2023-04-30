@@ -13,16 +13,20 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
+  solidity,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  // meta,
+  // starbucks,
+  // tesla,
+  itex,
+  // shopify,
   threejs,
+  web3,
+  ShapeUp,
+  metaverse,
+  aiChatbot,
+  Memories,
+  amazon
 } from "../assets";
 
 export const navLinks = [
@@ -31,8 +35,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -105,8 +109,8 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Solidity",
+    icon: solidity,
   },
   {
     name: "docker",
@@ -116,57 +120,57 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Software Engineer",
+    company_name: "iTexphere Solutions",
+    icon: itex,
+    iconBg: "#050816",
+    date: "January 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining mobile applications using React Native and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "UI optimized for different screen sizes and resolutions, ensuring that the app looks great on all devices.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Associate Software Engineer",
+    company_name: "iTexphere Solutions",
+    icon: itex,
+    iconBg: "#050816",
+    date: "May 2022 - January 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Work with senior engineers to help design applications, including creating specifications and defining system requirements.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Testing software applications to ensure they meet quality standards and perform as expected",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Software Engineer Intern",
+    company_name: "iTexphere Solutions",
+    icon: itex,
+    iconBg: "#050816",
+    date: "Aug 2021 - May 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing web applications using React.js and other related technologies.",
+      "Development, Customization, and maintenance of WordPress websites",
+      "Researching industry trends, technologies, and best practices",
+      "Contribute to discussions on project progress, challenges, and solutions.",
     ],
   },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  // {
+  //   title: "Full stack Developer",
+  //   company_name: "Meta",
+  //   icon: itex,
+  //   iconBg: "#050816",
+  //   date: "Jan 2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
 ];
 
 const testimonials = [
@@ -215,8 +219,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://krypt-indu.netlify.app/",
+    image: web3,
+    source_code_link: "https://krypt-indu.netlify.app",
     github_link: "https://github.com/Indu-Chandana/Web3.0-Blockchain-Application"
   },
   {
@@ -237,7 +241,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: ShapeUp,
     source_code_link: "https://fit-indu.netlify.app/",
     github_link: "https://github.com/Indu-Chandana/Fitness-Exercises-App-With-APIs"
   },
@@ -259,9 +263,75 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: metaverse,
     source_code_link: "https://metaversus-ui.vercel.app/",
     github_link: "https://github.com/Indu-Chandana/Metaversus-Ui"
+  },
+  {
+    name: "Codex-AI",
+    description:
+      "communication with advanced GPT3 model API, and most importantly, the ability to ask the AI for help regarding JS or any other language, giving it code and translating it to another programming language.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "OpenAI APIs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: aiChatbot,
+    source_code_link: "https://codex-ai-build-indu.vercel.app/",
+    github_link: "https://github.com/Indu-Chandana/Codex-AI-Build-Indu"
+  },
+  {
+    name: "Memories with MERN",
+    description:
+      "Memories is an app for adding, updating, deleting, and liking memories.Users can also view each other's memories, creating a community of shared experiences.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Memories,
+    source_code_link: "https://indu-memo.netlify.app/",
+    github_link: "https://github.com/Indu-Chandana/social-media-MERN-application"
+  },
+  {
+    name: "Amazon Clone",
+    description:
+      "List out items in a beautiful responsive website. Add items to basket supported by Redux state management. User can pay their order by stripe.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: amazon,
+    source_code_link: "https://amazon-clone-omega-six.vercel.app/",
+    github_link: "https://github.com/Indu-Chandana/Full-stack-Amazon-clone"
   },
 ];
 

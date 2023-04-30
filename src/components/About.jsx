@@ -39,9 +39,16 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      <motion.div variants={textVariant()} className="flex ">
+        <div className=" lg:w-[60%] xl:w-[35%]">
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
+        </div>
+        <img
+          src="https://media.licdn.com/dms/image/C4D03AQFFgqD8-mAOHA/profile-displayphoto-shrink_800_800/0/1623392386556?e=2147483647&v=beta&t=7yf52KFqCP1yuiWMbv9GqC_hj1dM_xy1POhYYfP6T50"
+          alt="Indu Chandana"
+          className="hidden lg:flex w-28 h-28 object-contain rounded-full"
+        />
       </motion.div>
 
       <motion.p
